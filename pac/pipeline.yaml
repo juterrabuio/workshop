@@ -1,6 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
+  namespace: pipe
   name: echo-pipeline
 spec:
   tasks:
