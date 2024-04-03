@@ -1,0 +1,13 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: echo-task
+spec:
+  steps:
+    - name: echo
+      image: registry.access.redhat.com/ubi8/ubi
+      command:
+        - /bin/bash
+      args:
+        - -c
+        - echo "Hello Tekton"
